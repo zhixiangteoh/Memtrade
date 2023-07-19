@@ -69,9 +69,9 @@ function client() {
     java -classpath $APPNAME-client.jar:$APPNAME-procs.jar:$APPCLASSPATH com.MyTPCC \
         --servers=localhost \
         --transactions=5800000 \
-	--ratelimit=200000 \
+	    --ratelimit=200000 \
         --warehouses=256 \
-        --scalefactor=22
+        --scalefactor=5
 }
 
 function help() {
